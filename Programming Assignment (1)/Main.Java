@@ -1,17 +1,18 @@
+
 public class Main {
 
-    // Convert from feet to meters
+    //convert feet to meters
     public static double footToMeter(double foot) {
         return 0.305 * foot;
     }
 
-    // Convert from meters to feet
+    //convert meters to feet
     public static double meterToFoot(double meter) {
         return 3.279 * meter;
     }
     
     public static void main(String[] args) {
-        // Table for feet to meters
+        //loop for feet to meters
         System.out.printf("%-10s%-10s\n", "Feet", "Meters");
         for (int foot = 1; foot <= 10; foot++) {
             double meter = footToMeter(foot);
@@ -19,7 +20,7 @@ public class Main {
             
         }
 
-        // Table for meters to feet
+        //loop for meters to feet
         System.out.printf("\n%-10s%-10s\n", "Meters", "Feet");
         for (int meter = 20; meter <= 65; meter += 5) {
             double foot = meterToFoot(meter);
